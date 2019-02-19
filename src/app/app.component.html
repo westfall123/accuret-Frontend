@@ -1,0 +1,61 @@
+<div class="headingBackground">
+  <div class="headingLine"></div>
+  <p style="margin-left: 25px; margin-top: 10px;">
+    <span class="headingTitle1">Accu</span>
+    <span class="headingTitle2">ret</span>
+    <span class="headingTitle1"> Dashboard</span>
+  </p>
+</div>
+
+<div class="dashboardBackground">
+
+    <ul class="flex-container">
+      <li class="infoBox">
+        <app-availability></app-availability>
+      </li>
+      <li class="infoBox">
+        <app-reported-availability></app-reported-availability>
+      </li>
+      <li class="infoBox">
+        <app-lost-sales></app-lost-sales>
+      </li>
+      <li class="infoBox">
+        <app-data-accuracy></app-data-accuracy>
+      </li>
+    </ul>
+
+    <div class="noticeMessage">
+      All values are one year rolling averages. % change compared to rolling horizon ending last period.
+    </div>
+
+    <ul class="flex-container">
+      <li class="graphBox">
+        <div class="graphHeading">
+          <div class="graphHeadingText">Lost Sales by SKU</div>
+        </div>
+        <app-lost-sales-sku></app-lost-sales-sku>
+      </li>
+      <li class="graphBox">
+        <div class="graphHeading">
+          <div class="graphHeadingText">Total Lost Sales Over Time</div>
+        </div>
+        <app-lost-sales-time></app-lost-sales-time>
+      </li>
+    </ul>
+
+    <ul class="flex-container">
+      <li class="graphBox">
+        <div class="graphHeading">
+          <div class="graphHeadingText">Lost Sales By Store</div>
+        </div>
+        <app-lost-sales-store></app-lost-sales-store>
+      </li>
+      <li class="graphBox">
+        <div class="graphHeading">
+          <div class="graphHeadingText">Substitution When Product is OOS</div>
+        </div>
+        <app-substitution-when-product-is-oos></app-substitution-when-product-is-oos>
+      </li>
+    </ul>
+</div>
+

@@ -1,0 +1,35 @@
+.selectText {
+    color: #19B4AC;
+    font-size: 20px;
+    font-weight: 625;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.valueText {
+    color: rgb(44, 47, 61);
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.littleValueText {
+    color: rgb(44, 47, 61);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+}
+
+.centerSelect {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.centerValue {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.icon {
+    color: #19B4AC;
+    font-size: 20px;
+    margin-right: 10px;
+}
