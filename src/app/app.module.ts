@@ -13,6 +13,7 @@ import { LostSalesSkuComponent } from './components/lost-sales-sku/lost-sales-sk
 import { LostSalesTimeComponent } from './components/lost-sales-time/lost-sales-time.component';
 import { LostSalesStoreComponent } from './components/lost-sales-store/lost-sales-store.component';
 import { SubstitutionWhenProductIsOOSComponent } from './components/substitution-when-product-is-oos/substitution-when-product-is-oos.component';
+import { LostSalesPercentVsUnitComponent } from './components/lost-sales-percent-vs-unit/lost-sales-percent-vs-unit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SubstitutionWhenProductIsOOSComponent } from './components/substitution
     LostSalesSkuComponent,
     LostSalesTimeComponent,
     LostSalesStoreComponent,
-    SubstitutionWhenProductIsOOSComponent
+    SubstitutionWhenProductIsOOSComponent,
+    LostSalesPercentVsUnitComponent
   ],
   imports: [
     BrowserModule,
