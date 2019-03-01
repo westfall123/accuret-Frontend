@@ -9,6 +9,10 @@ import { EChartOption } from 'echarts';
 export class LostSalesTimeComponent implements OnInit {
 
   chartOption: EChartOption = {
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} <br/>{b}: {c}'
+    },
     xAxis: {
       type: 'category',
       boundaryGap: false,
@@ -30,15 +34,17 @@ export class LostSalesTimeComponent implements OnInit {
       }
     },
     series: [{
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
-        type: 'line',
-        areaStyle: {}
+      name: 'Total Lost Sales',
+      data: [820, 932, 901, 934, 1290, 1330, 1320],
+      type: 'line',
+      areaStyle: {}
     }]
   };
 
   constructor() { }
 
   ngOnInit() {
+  
   }
 
 }

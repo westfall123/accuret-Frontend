@@ -9,6 +9,10 @@ import { EChartOption } from 'echarts';
 export class LostSalesStoreComponent implements OnInit {
 
   chartOption: EChartOption = {
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} <br/>{b}: {c}'
+    },
     xAxis: {
       type: 'value',
       name: 'Total Lost Sales',
@@ -29,6 +33,7 @@ export class LostSalesStoreComponent implements OnInit {
       }
     },
     series: [{
+      name: 'Lost Sales by Store',
       data: [440, 450, 470, 480, 490, 500, 510, 515, 590],
       type: 'bar'
     }]

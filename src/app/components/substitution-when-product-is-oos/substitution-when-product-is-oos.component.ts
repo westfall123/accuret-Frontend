@@ -9,6 +9,10 @@ import { EChartOption } from 'echarts';
 export class SubstitutionWhenProductIsOOSComponent implements OnInit {
 
   chartOption: EChartOption = {
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c}'
+    },
     xAxis: {
         name: 'Transition Porbability Out',
         nameLocation: 'middle',
@@ -26,21 +30,21 @@ export class SubstitutionWhenProductIsOOSComponent implements OnInit {
         }
       },
       series: [{
-          symbolSize: 20,
-          data: [
-              [10.0, 8.04],
-              [8.0, 6.95],
-              [13.0, 7.58],
-              [9.0, 8.81],
-              [11.0, 8.33],
-              [14.0, 9.96],
-              [6.0, 7.24],
-              [4.0, 4.26],
-              [12.0, 10.84],
-              [7.0, 4.82],
-              [5.0, 5.68]
-          ],
-          type: 'scatter'
+        name: 'Transition to OOS',
+        data: [
+          [10.0, 8.04],
+          [8.0, 6.95],
+          [13.0, 7.58],
+          [9.0, 8.81],
+          [11.0, 8.33],
+          [14.0, 9.96],
+          [6.0, 7.24],
+          [4.0, 4.26],
+          [12.0, 10.84],
+          [7.0, 4.82],
+          [5.0, 5.68]
+        ],
+        type: 'scatter'
       }]
     };
 
