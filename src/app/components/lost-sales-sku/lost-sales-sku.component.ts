@@ -9,6 +9,13 @@ import { EChartOption } from 'echarts';
 export class LostSalesSkuComponent implements OnInit {
 
   chartOption: EChartOption = {
+    color: ['#131955',
+      '#3c4072',
+      '#222a82',
+      '#2e4064',
+      '#092764',
+      '#193163'],
+    
     tooltip: {
       trigger: 'item',
       formatter: '{a} <br/>{b}: {c}'

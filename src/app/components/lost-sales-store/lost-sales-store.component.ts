@@ -9,6 +9,12 @@ import { EChartOption } from 'echarts';
 export class LostSalesStoreComponent implements OnInit {
 
   chartOption: EChartOption = {
+    color: ['#131955',
+    '#3c4072',
+    '#222a82',
+    '#2e4064',
+    '#092764',
+    '#193163'],
     tooltip: {
       trigger: 'item',
       formatter: '{a} <br/>{b}: {c}'
@@ -33,10 +39,16 @@ export class LostSalesStoreComponent implements OnInit {
       }
     },
     series: [{
-      name: 'Lost Sales by Store',
-      data: [440, 450, 470, 480, 490, 500, 510, 515, 590],
-      type: 'bar'
-    }]
+        data: [440, 450, 470, 480, 490, 500, 510, 515, 590],
+        type: 'bar'
+      },
+      {
+        data: [230, 567, 100, 230, 230, 230, 230, 230, 230],
+        type: 'bar',
+        barWidth: '60%',
+        barGap:'-100'
+      }
+    ]
   };
 
   constructor() { }
