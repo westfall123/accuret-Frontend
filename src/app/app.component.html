@@ -28,66 +28,7 @@
       <div class="tileHeading">
         <div class="tileHeadingText">Filter</div>
       </div>
-
-      <ul class="flex-container">
-        <li class="filterBox">
-          <div class="dropdownTitle">
-            <div class="titleAlign">Store</div>
-          </div>
-          <div class="dropdown">
-            <button (click)="showDropdown('store')" class="dropbtn">
-              {{store}}<span style="float: right"><fa-icon [icon]="faAngleDown" class="icon"></fa-icon></span>
-            </button>
-            <div id="storeDropdown" class="dropdown-content">
-              <a (click)="hideDropdown('storeDropdown', 'Store 1')">Store 1</a>
-              <a (click)="hideDropdown('storeDropdown', 'Store 2')">Store 2</a>
-              <a (click)="hideDropdown('storeDropdown', 'Store 3')">Store 3</a>
-              <a (click)="hideDropdown('storeDropdown', 'All')">All</a>
-            </div>
-          </div>
-        </li>
-        <li class="filterBox">
-          <div class="dropdownTitle">
-            <div class="titleAlign">SKU</div>
-          </div>
-          <div class="dropdown">
-            <button (click)="showDropdown('sku')" class="dropbtn">
-              {{SKU}}<span style="float: right"><fa-icon [icon]="faAngleDown" class="icon"></fa-icon></span>
-            </button>
-            <div id="SKUDropdown" class="dropdown-content">
-              <a (click)="hideDropdown('SKUDropdown', 'SKU 1')">SKU 1</a>
-              <a (click)="hideDropdown('SKUDropdown', 'SKU 2')">SKU 2</a>
-              <a (click)="hideDropdown('SKUDropdown', 'SKU 3')">SKU 3</a>
-              <a (click)="hideDropdown('SKUDropdown', 'All')">All</a>
-            </div>
-          </div>
-        </li>
-        <li class="filterBox">
-          <div class="dropdownTitle">
-            <div class="titleAlign">Time</div>
-          </div>
-          <div class="dropdown">
-            <button (click)="showDropdown('time')" class="dropbtn">
-              {{time}}<span style="float: right"><fa-icon [icon]="faAngleDown" class="icon"></fa-icon></span>
-            </button>
-            <div id="timeDropdown" class="dropdown-content">
-              <a (click)="hideDropdown('timeDropdown', 'Time 1')">Time 1</a>
-              <a (click)="hideDropdown('timeDropdown', 'Time 2')">Time 2</a>
-              <a (click)="hideDropdown('timeDropdown', 'Time 3')">Time 3</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <!--
-        <div class="dropdown">
-        <button (click)="showDropdown()" class="dropbtn">{{store}} ></button>
-        <div id="myDropdown" class="dropdown-content">
-          <a (click)="hideDropdown('link 1')">Link 1</a>
-          <a (click)="hideDropdown('link 2')">Link 2</a>
-          <a (click)="hideDropdown('link 3')">Link 3</a>
-        </div>
-      </div> 
-      -->
+      <app-filter></app-filter>
     </div>
 
     <div class="noticeMessage">
@@ -95,7 +36,7 @@
     </div>
 
     <ul class="flex-container">
-      <li class="graphBox" style="width: 32%">
+      <li class="graphBox">
         <div class="tileHeading">
           <div class="tileHeadingText">Lost Sales by SKU</div>
         </div>

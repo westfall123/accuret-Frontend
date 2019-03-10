@@ -1,0 +1,32 @@
+<ul class="flex-container" style="margin-top: 40px;">
+  <li class="filterBox">
+    <div class="dropdownTitle">
+      <div class="titleAlign">Store</div>
+    </div>
+    <div class="dropdown">
+      <p-multiSelect [options]="stores" [(ngModel)]="selectedStores" styleClass="filter"
+      maxSelectedLabels="6" panelStyleClass="{0} Store's selected" (onPanelHide)="updateCharts('stores')"
+      defaultLabel="All"></p-multiSelect>
+    </div>
+  </li>
+  <li class="filterBox">
+    <div class="dropdownTitle">
+      <div class="titleAlign">SKU</div>
+    </div>
+    <div class="dropdown">
+      <p-multiSelect [options]="skus" [(ngModel)]="selectedSKUs" styleClass="filter"
+      maxSelectedLabels="6" panelStyleClass="{0} Store's selected" (onPanelHide)="updateCharts('skus')"
+      defaultLabel="All"></p-multiSelect>
+    </div>
+  </li>
+  <li class="filterBox">
+    <div class="dropdownTitle">
+      <div class="titleAlign">Time</div>
+    </div>
+    <div class="dropdown">
+      <p-multiSelect [options]="times" [(ngModel)]="selectedTimes" styleClass="filter"
+      maxSelectedLabels="6" panelStyleClass="{0} Store's selected" (onPanelHide)="updateCharts('times')"
+      defaultLabel="All"></p-multiSelect>
+    </div>
+  </li>
+</ul>

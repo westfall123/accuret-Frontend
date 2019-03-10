@@ -33,8 +33,8 @@ export class LostSalesSkuComponent implements OnInit {
       type: 'category',
       data: ['5', '3', '7', '8', '9', '4', '2', '6', '10', '1'],
       name: 'SKU ID',
-      nameLocation: 'middle',
-      nameGap: 35,
+      nameLocation: 'end',
+      nameGap: 5,
       nameTextStyle: {
         fontWeight: 'bold'
       }

@@ -7,15 +7,16 @@
 
 .valueText {
     color: rgb(44, 47, 61);
-    font-size: 70px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .littleValueText {
     color: rgb(44, 47, 61);
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 .centerSelect {

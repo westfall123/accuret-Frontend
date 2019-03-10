@@ -14,6 +14,10 @@ import { LostSalesTimeComponent } from './components/lost-sales-time/lost-sales-
 import { LostSalesStoreComponent } from './components/lost-sales-store/lost-sales-store.component';
 import { SubstitutionWhenProductIsOOSComponent } from './components/substitution-when-product-is-oos/substitution-when-product-is-oos.component';
 import { LostSalesPercentVsUnitComponent } from './components/lost-sales-percent-vs-unit/lost-sales-percent-vs-unit.component';
+import { FilterComponent } from './components/filter/filter.component';
+import {MultiSelectModule} from 'primeng/multiselect';
+import { FormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,12 +30,16 @@ import { LostSalesPercentVsUnitComponent } from './components/lost-sales-percent
     LostSalesTimeComponent,
     LostSalesStoreComponent,
     SubstitutionWhenProductIsOOSComponent,
-    LostSalesPercentVsUnitComponent
+    LostSalesPercentVsUnitComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    NgxEchartsModule
+    NgxEchartsModule,
+    MultiSelectModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -32,8 +32,8 @@ export class LostSalesStoreComponent implements OnInit {
       type: 'category',
       data: ['37', '27', '26', '88', '65', '89', '51', '94', '58'],
       name: 'Store ID',
-      nameLocation: 'middle',
-      nameGap: 35,
+      nameLocation: 'end',
+      nameGap: 5,
       nameTextStyle: {
         fontWeight: 'bold'
       }

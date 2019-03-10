@@ -1,4 +1,6 @@
 .demo-chart {
-    height: calc(100% - 40px);
-    width: 100%;
+    height: calc(100% - 10px);
+    width: 108%;
+    margin-left: -20px;
+    margin-top: 10px;
 }

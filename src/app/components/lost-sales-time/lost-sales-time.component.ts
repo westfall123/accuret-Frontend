@@ -34,7 +34,7 @@ export class LostSalesTimeComponent implements OnInit {
         type: 'value',
         name: 'Total Lost Sales',
         nameLocation: 'middle',
-        nameGap: 45,
+        nameGap: 43,
         nameTextStyle: {
         fontWeight: 'bold'
       }
