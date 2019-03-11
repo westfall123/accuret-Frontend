@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons';
+import { AccuretService } from 'src/app/services/accuret.service';
 
 @Component({
   selector: 'app-lost-sales',
@@ -12,12 +13,15 @@ export class LostSalesComponent implements OnInit {
   littlePercentage: string;
   faMoneyBillAlt = faMoneyBillAlt;
 
-  constructor() {
-    this.bigPercentage = '35.1';
+  constructor(private service: AccuretService) {
+    this.bigPercentage = '';
     this.littlePercentage = '1%';
   }
 
   ngOnInit() {
   }
 
+  loadData(): void {
+    this.bigPercentage = this.service.getLostSales();
+  }
 }

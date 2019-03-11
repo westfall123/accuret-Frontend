@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+import { AccuretService } from 'src/app/services/accuret.service';
 
 @Component({
   selector: 'app-data-accuracy',
@@ -12,12 +13,16 @@ export class DataAccuracyComponent implements OnInit {
   littlePercentage: string;
   faCheckSquare = faCheckSquare;
 
-  constructor() {
-    this.bigPercentage = '27.9';
+  constructor(private service: AccuretService) {
+    this.bigPercentage = '';
     this.littlePercentage = '';
   }
 
   ngOnInit() {
+  }
+
+  laodData(): void {
+    this.bigPercentage = this.service.getDataAccuracy();
   }
 
 }

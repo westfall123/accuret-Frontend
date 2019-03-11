@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output, EventEmitter } from '@angular/core';
 import { SelectItem } from 'primeng/api';
 
 @Injectable({
@@ -10,8 +10,21 @@ export class AccuretService {
   skus: SelectItem[];
   times: SelectItem[];
 
+  availability = '90.5';
+  reportedAvailability = '95.0';
+  lostSales = '35.1';
+  dataAccuracy = '27.9';
+
+  @Output() notifyDataIsReady = new EventEmitter();
+
   constructor() {
     this.populateSampleData();
+  }
+
+  loadData(): void {
+    // This will be an http command that will load the JSON into our model.
+    // It is void now but will return an observable in the future.
+
   }
 
   populateSampleData(): void {
@@ -42,5 +55,21 @@ export class AccuretService {
 
   getTimes(): SelectItem[] {
     return this.times;
+  }
+
+  getAvailability(): string {
+    return this.availability;
+  }
+
+  getDataAccuracy(): string {
+    return this.dataAccuracy;
+  }
+
+  getLostSales(): string {
+    return this.lostSales;
+  }
+
+  getReportedAvailability(): string {
+    return this.reportedAvailability;
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { AccuretService } from 'src/app/services/accuret.service';
 
 @Component({
   selector: 'app-reported-availability',
@@ -12,12 +13,15 @@ export class ReportedAvailabilityComponent implements OnInit {
   littlePercentage: string;
   faBook = faBook;
 
-  constructor() {
-    this.bigPercentage = '95.0';
+  constructor(private service: AccuretService) {
+    this.bigPercentage = '';
     this.littlePercentage = '';
   }
 
   ngOnInit() {
   }
 
+  laodData(): void {
+    this.bigPercentage = this.service.getReportedAvailability();
+  }
 }
