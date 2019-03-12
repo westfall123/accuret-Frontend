@@ -36,9 +36,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.availability.loadData();
-    this.reportedAvailability.laodData();
+    this.reportedAvailability.loadData();
     this.lostSales.loadData();
-    this.dataAccuracy.laodData();
+    this.dataAccuracy.loadData();
   }
 
   

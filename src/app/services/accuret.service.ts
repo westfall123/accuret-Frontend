@@ -1,5 +1,7 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import { SelectItem } from 'primeng/api';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { DataSet } from '../models/dataSet';
 
 @Injectable({
   providedIn: 'root'
@@ -14,17 +16,18 @@ export class AccuretService {
   reportedAvailability = '95.0';
   lostSales = '35.1';
   dataAccuracy = '27.9';
+  url;
 
   @Output() notifyDataIsReady = new EventEmitter();
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.populateSampleData();
   }
 
   loadData(): void {
     // This will be an http command that will load the JSON into our model.
     // It is void now but will return an observable in the future.
-
+    this.http.get<DataSet>(this.url);
   }
 
   populateSampleData(): void {

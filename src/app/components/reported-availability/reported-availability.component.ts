@@ -21,7 +21,7 @@ export class ReportedAvailabilityComponent implements OnInit {
   ngOnInit() {
   }
 
-  laodData(): void {
+  loadData(): void {
     this.bigPercentage = this.service.getReportedAvailability();
   }
 }
