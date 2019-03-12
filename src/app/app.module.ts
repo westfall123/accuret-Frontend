@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule }    from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AvailabilityComponent } from './components/availability/availability.component';
@@ -39,7 +40,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NgxEchartsModule,
     MultiSelectModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
